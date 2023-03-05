@@ -1,0 +1,6 @@
+g++ -fPIC -c lib1.cpp -o d1.o 
+g++ -fPIC -c lib2.cpp -o d2.o
+g++ -shared -o libd1.so d1.o -lm
+g++ -shared -o libd2.so d2.o -lm
+g++ main2.cpp -L. -ldl -o main2.out -Wl,-rpath -Wl,.
+g++ main1.cpp -L. -ldl -o main1.out -Wl,-rpath -Wl,..
