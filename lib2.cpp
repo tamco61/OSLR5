@@ -1,6 +1,6 @@
 #include "lib2.h"
 
-float SinIntegral(float a, float b, float e) 
+extern "C" float SinIntegral(float a, float b, float e) 
 {
 	float result = 0;
 	int n = (int) ((b-a) / e);
@@ -17,7 +17,7 @@ float SinIntegral(float a, float b, float e)
 }
 
 
-int PrimeCount(int A, int B)
+extern "C" int PrimeCount(int A, int B)
 {
 	int result = 0;
 
