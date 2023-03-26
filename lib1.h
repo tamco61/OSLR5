@@ -2,8 +2,8 @@
 #define LIB1_H
 #include <math.h>
 
-float SinIntegral(float A, float B, float e);
+extern "C" float SinIntegral(float A, float B, float e);
 
-int PrimeCount(int A, int B);
+extern "C" int PrimeCount(int A, int B);
 
 #endif
