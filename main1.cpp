@@ -4,8 +4,8 @@
 
 void help(){
     printf("USAGE: K arg1 arg2 ... arg N\n");
-    printf("K = 1 - if you want to take the derivative. arg1 = point A, arg2 = increment\n");
-    printf("K = 2 - if you want to calculate the number pi. arg1 = accuracy\n");
+    printf("K = 1 - if you want to take the SinIntegral. arg1 = point A, arg2 = B, arg3 = e\n");
+    printf("K = 2 - if you want to take the PrimeCount. arg1 = A, arg2 = B\n");
 }
 
 int main(){
